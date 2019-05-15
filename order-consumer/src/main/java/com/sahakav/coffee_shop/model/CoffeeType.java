@@ -1,4 +1,4 @@
-package com.cqrs.producer.model;
+package com.sahakav.coffee_shop.model;
 
 public enum CoffeeType {
 

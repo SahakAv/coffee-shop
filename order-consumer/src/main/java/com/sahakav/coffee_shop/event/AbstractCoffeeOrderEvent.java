@@ -1,10 +1,14 @@
-package com.cqrs.producer.event;
+package com.sahakav.coffee_shop.event;
+
 
 import java.util.UUID;
 
 public abstract class AbstractCoffeeOrderEvent {
-    private final UUID orderId;
+    private  UUID orderId;
 
+    public AbstractCoffeeOrderEvent() {
+        //Default constructor
+    }
 
     public AbstractCoffeeOrderEvent(UUID orderId) {
         this.orderId = orderId;

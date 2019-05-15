@@ -1,13 +1,18 @@
-package com.cqrs.producer.event;
+package com.sahakav.coffee_shop.event;
 
-import com.cqrs.producer.model.CoffeeOrder;
-import com.cqrs.producer.model.CoffeeType;
+import com.sahakav.coffee_shop.model.CoffeeOrder;
+import com.sahakav.coffee_shop.model.CoffeeType;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.UUID;
 
 public class CreateCoffeeOrderEvent extends AbstractCoffeeOrderEvent {
-
+    @JsonProperty(value = "coffeeType")
     private CoffeeType coffeeType;
+
+    public CreateCoffeeOrderEvent() {
+        //Default constructor
+    }
 
     public CreateCoffeeOrderEvent(UUID orderId, CoffeeType coffeeType) {
         super(orderId);
