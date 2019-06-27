@@ -18,4 +18,4 @@ kafka:
     server:
       host: localhost:9092
   orders:
-      topic: orders
+      topic: order

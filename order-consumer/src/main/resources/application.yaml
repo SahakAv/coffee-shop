@@ -12,7 +12,8 @@ spring:
             non_contextual_creation: true
     hibernate:
       ddl-auto: create
-
+server:
+  port: 8081
 kafka:
   bootstrap:
     server:

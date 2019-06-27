@@ -1,6 +1,5 @@
 version: '3.5'
 services:
-
   postgres-service:
     container_name: postgres-service
     image: postgres:11

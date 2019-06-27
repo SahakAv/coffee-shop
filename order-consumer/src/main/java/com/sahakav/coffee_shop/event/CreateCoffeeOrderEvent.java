@@ -24,4 +24,11 @@ public class CreateCoffeeOrderEvent extends AbstractCoffeeOrderEvent {
     public void setCoffeeType(CoffeeType coffeeType) {
         this.coffeeType = coffeeType;
     }
+
+    @Override
+    public String toString() {
+        return "CreateCoffeeOrderEvent{" +
+                "coffeeType=" + coffeeType +
+                '}';
+    }
 }
