@@ -1,2 +1,2 @@
 # coffee-shop
- Microservices example using kafka, docker, CQRS, event-sourcing
+ Microservice example using Scala, Kafka, Docker, CQRS, Event-sourcing
